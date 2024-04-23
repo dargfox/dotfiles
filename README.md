@@ -147,7 +147,7 @@ Check some plugins for more info how to setup plugin.
  - PowerLine is used for beautiful interface of the PS. You are able to turn off it
  - History size increased to 20000
  - If PowerLine won't be used - PS also custom wrote
- - At the end of .bashrc you can find bunch of different if-statements. It's **strongly** recommended not to touch it. If you will not setup all the bush environment - I **recommend** to move all these if-statements to your .bash_profile or .bashrc
+ - At the end of .bashrc you can find bunch of different if-statements. It's **strongly** recommended not to touch it. If you will not setup all the bash environment - I **recommend** to move all these if-statements to your .bash_profile or .bashrc
 
 ## Konsole
 ### Good to know
