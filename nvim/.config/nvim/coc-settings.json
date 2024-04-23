@@ -1,0 +1,22 @@
+{
+  "codeLens.enable": true,
+  "diagnostic.errorSign": "ⓧ",
+  "diagnostic.infoSign": "ⓘ",
+  "diagnostic.hintSign": "ⓗ",
+  "diagnostic.enableHighlightLineNumber": true,
+  "signature.enable": true,
+  "coc.preferences.colorSupport": true,
+  "highlight.colors.enable": true,
+  "hover.floatConfig": {
+    "border": true
+  },
+  "diagnostic.floatConfig": {
+    "border": true
+  },
+  "suggest.floatConfig": {
+    "border": true
+  },
+  "signature.floatConfig": {
+    "border": true
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "tsserver.enable": true,
+  "semanticTokens.enable": true,
+}
