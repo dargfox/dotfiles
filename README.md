@@ -4,7 +4,7 @@
 ![preview][preview]
 
 ## Requirements
-### Packeges
+### Packages
  - stow
  - neovim
  - tmux
@@ -14,7 +14,7 @@
 
  **Neovim** is used as a main code editor. Configured with bamboo theme. LSP configured for JS, Python, Lua, Bash, Vue.Treesitter is used for beautiful highlights. Added floaterm and LazyGit for easy git operating. That's main features, try all of it by yourself.
 
-**Tmux** is used for easy operating in terminal. With current .bashrc it opens on bash start. Addeed theme, that has a lot of useful information in your terminal.
+**Tmux** is used for easy operating in terminal. With current .bashrc it opens on bash start. Added theme, that has a lot of useful information in your terminal.
 
 **LazyGit** - if you are going to use NeoVim as main code editor - **please** setup it, it will make your life easier and brighter.
 
@@ -23,7 +23,7 @@
  ```bash
  stow tmux/ #? Setup tmux
  stow nvim/ #? Setup nvim
- stow *     #? Setup all (be careful, btter setup folder by folder, what you need)
+ stow *     #? Setup all (be careful, better setup folder by folder, what you need)
  ```
 
 ## Tmux
@@ -132,7 +132,7 @@ init.lua - core file with all imports
 coc-settings.json - file that you can open with command "CocConfig"
 lua/vim-options.lua - core configurations for nvim
 lua/keymaps.lua - core keybinds for nvim
-lua/plugins/* - all the plugins. If you want to add any plugin - do it here. 
+lua/plugins/* - all the plugins. If you want to add any plugin - do it here.
 Check some plugins for more info how to setup plugin.
 ```
 
@@ -147,7 +147,7 @@ Check some plugins for more info how to setup plugin.
  - PowerLine is used for beautiful interface of the PS. You are able to turn off it
  - History size increased to 20000
  - If PowerLine won't be used - PS also custom wrote
- - At the end of .bashrc you can find bunch of different if-statements. It's **strongly** recomended not to touch it. If you will not setup all the bush environment - I **recommend** to move all these if-statements to your .bash_profile or .bashrc
+ - At the end of .bashrc you can find bunch of different if-statements. It's **strongly** recommended not to touch it. If you will not setup all the bush environment - I **recommend** to move all these if-statements to your .bash_profile or .bashrc
 
 ## Konsole
 ### Good to know
