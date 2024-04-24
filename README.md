@@ -4,11 +4,13 @@
 ![preview][preview]
 
 ## Requirements
+> Please, read how to clone[^clone] before you do enything, project has submodules[^modules]
 ### Packages
  - stow
  - neovim
  - tmux
  - lazygit
+ - powerline (optional)
 
  **Stow** is used for sync of dotfiles. Read more how to use stow for correct environment setup.
 
@@ -156,5 +158,29 @@ Check some plugins for more info how to setup plugin.
  - No buttons, no tabs, no menus. Just terminal
 ## Pictures
 _Just some pictures that is used for environment_
+
+[^clone]: When you **clone** code you should use `--recurse-submodules`, like this:
+    ```bash
+    git clone --recurse-submodules git@github.com:dargfox/dotfiles.git
+    ```
+
+[^modules]: Some of the directories have it's own repository, so in that case you have to add it to .gitmodules. In my case it's tmux plugins, that are cloned from git remote repositories.
+
+    > [Thanks to Fatih Arslan](https://stackoverflow.com/a/10607225)
+    > <br/>To add modules to your dotfiles you can use next command:
+    ```bash
+    for x in $(find . -type d) ; do if [ -d "${x}/.git" ] ; then cd "${x}" ; origin="$(git config --get remote.origin.url)" ; cd - 1>/dev/null; git submodule add "${origin}" "${x}" ; fi ; done
+    ```
+    Or more readable version:
+    ```bash
+    for x in $(find . -type d) ; do
+        if [ -d "${x}/.git" ] ; then
+            cd "${x}"
+            origin="$(git config --get remote.origin.url)"
+            cd - 1>/dev/null
+            git submodule add "${origin}" "${x}"
+        fi
+    done
+    ```
 
 [preview]: https://github.com/dargfox/dotfiles/raw/main/preview.png
