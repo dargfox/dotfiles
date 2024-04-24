@@ -95,6 +95,6 @@ ColorRandomization=false
 Description=StoneV1
 FillStyle=Crop
 Opacity=0.89
-Wallpaper=~/Pictures/serial-experiments-lain-2.jpeg
+Wallpaper=/home/dargfox/Pictures/serial-experiments-lain-2.jpeg
 WallpaperFlipType=NoFlip
 WallpaperOpacity=0.21
