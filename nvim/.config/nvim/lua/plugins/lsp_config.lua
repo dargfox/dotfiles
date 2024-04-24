@@ -102,5 +102,14 @@ return {
         })
       end
     end
-  }
+  },
+  {
+    "maxmellon/vim-jsx-pretty",
+  },
+  {
+    "peitalin/vim-jsx-typescript",
+    dependencies = {
+        "leafgarland/typescript-vim",
+      }
+  },
 }
