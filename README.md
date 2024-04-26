@@ -4,7 +4,7 @@
 ![preview][preview]
 
 ## Requirements
-> Please, read how to clone[^clone] before you do enything, project has submodules[^modules]
+> Please, read how to clone[^clone] before you do anything, project has submodules[^modules]
 ### Packages
  - stow
  - neovim
