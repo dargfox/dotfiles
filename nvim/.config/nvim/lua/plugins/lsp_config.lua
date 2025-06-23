@@ -12,13 +12,6 @@ end
 
 return {
   {
-    "williamboman/mason.nvim",
-    lazy = false,
-    config = function()
-      require("mason").setup()
-    end,
-  },
-  {
     "neoclide/coc.nvim",
     branch = "release",
     config = function ()
@@ -51,10 +44,26 @@ return {
           command = "silent call CocActionAsync('highlight')",
           desc = "Highlight symbol under cursor on CursorHold"
       })
-
-      vim.g.coc_global_extentions = { "coc-lua", "coc-tsserver", "@yaegassy/coc-volar", "@yaegassy/coc-volar-tools" }
       vim.g.coc_status_error_sign = '×'
       vim.g.coc_status_warning_sign = '×'
+    end,
+    init = function()
+      vim.g.coc_start_at_startup = true
+      vim.g.coc_global_extensions = {
+        "coc-lua",
+        "coc-tsserver",
+        "@yaegassy/coc-volar",
+        "@yaegassy/coc-volar-tools",
+        "coc-stylelint",
+        "coc-prisma",
+        "coc-highlight",
+        "coc-eslint",
+        "coc-tslint-plugin",
+        "coc-tailwindcss",
+        "coc-css",
+        "coc-pyright",
+        "coc-spell-checker"
+      }
 
     end
   },
@@ -91,9 +100,9 @@ return {
       local lspc = require("lspconfig")
 
       local configs = {
-        lspc.lua_ls, lspc.volar, lspc.tsserver, lspc.basedpyright, lspc.prismals,
-        lspc.pico8_ls, lspc.html, lspc.gopls, lspc.cssls, lspc.angularls,
-        lspc.bashls, lspc.hydra_lsp
+        -- lspc.lua_ls, lspc.volar, lspc.ts_ls, lspc.basedpyright, lspc.prismals,
+        -- lspc.pico8_ls, lspc.html, lspc.gopls, lspc.cssls, lspc.angularls,
+        -- lspc.bashls, lspc.hydra_lsp
       }
 
       for _, conf in ipairs(configs) do

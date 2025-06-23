@@ -30,3 +30,5 @@ vim.opt.writebackup = false
 vim.opt.backup = false
 vim.opt.updatetime = 300
 vim.opt.signcolumn = "yes"
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
