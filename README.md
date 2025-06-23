@@ -164,6 +164,11 @@ _Just some pictures that is used for environment_
     git clone --recurse-submodules git@github.com:dargfox/dotfiles.git
     ```
 
+[^modules_head]: To establish consistent modules updates via git pull (used by tmux), you should run next command to switch all detached branches in submodules to it's origin HEADs:
+    ```bash
+    git submodule foreach 'git checkout $(git remote show origin | awk "/HEAD branch/ {print \$NF}")'
+    ```
+
 [^modules]: Some of the directories have it's own repository, so in that case you have to add it to .gitmodules. In my case it's tmux plugins, that are cloned from git remote repositories.
 
     > [Thanks to Fatih Arslan](https://stackoverflow.com/a/10607225)
